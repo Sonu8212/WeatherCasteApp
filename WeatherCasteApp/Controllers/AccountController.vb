@@ -21,7 +21,7 @@ Public Class AccountController
                 GlobalUserStore.CurrentUserId = userId.Value
                 GlobalUserStore.CurrentUsername = model.Username
                 ' Check if user is admin (e.g., UserId = 1)
-                If userId.Value = 1 Then ' Adjust admin UserId as per your database
+                If userId.Value = 1 Then
                     Return RedirectToAction("RecentForecasts", "Weather")
                 Else
                     Return RedirectToAction("Upload", "Weather")

@@ -2,7 +2,7 @@
 Imports System.Data.OleDb
 
 Public Class ForecastDataAccess
-    ' Private ReadOnly _connectionString As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=|DataDirectory|\Forecasts.accdb;Persist Security Info=False;"
+
 
     Private ReadOnly _connectionString As String = ConfigurationManager.ConnectionStrings("AccessConnection").ConnectionString
 
